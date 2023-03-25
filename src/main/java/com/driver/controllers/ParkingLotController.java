@@ -1,14 +1,13 @@
+package com.driver.controllers;
 
-        package com.driver.controllers;
+import com.driver.services.ParkingLotService;
+import com.driver.services.impl.ParkingLotServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-        import com.driver.services.ParkingLotService;
-        import com.driver.services.impl.ParkingLotServiceImpl;
-        import org.springframework.beans.factory.annotation.Autowired;
-        import org.springframework.http.HttpStatus;
-        import org.springframework.http.ResponseEntity;
-        import org.springframework.web.bind.annotation.*;
-
-        import com.driver.model.*;
+import com.driver.model.*;
 
 @RestController
 @RequestMapping("/parking-lots")
